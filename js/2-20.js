@@ -1,8 +1,6 @@
 var oInput = document.getElementsByTagName('textarea')[0];
 var oBtn = document.getElementsByTagName('button'),
     team = [];
-var a = '1 2 3, 4';
-alert(a.split(/[^\d]+/))
 function getText () {
 	var txt = oInput.value.trim();
 	return txt = txt.split(/[^0-9a-zA-Z\u4e00-\u9fa5]+/).filter(function(item){return item != '';});
@@ -57,3 +55,25 @@ function print () {
 	oDiv.innerHTML = html;
 	oInput.value = '';
 }
+function search () {
+	oBtn[4].addEventListener('click',toGo,false);
+	
+    
+}
+function toGo () {
+	var oInp = document.getElementById('inp');
+	var txt = oInp.value;
+	var waitText = document.getElementById('text').getElementsByTagName('div');
+    for (var i = 0; i < waitText.length; i++) {
+    	if(waitText[i].innerHTML.indexOf(txt) > -1){
+    		waitText[i].style.backgroundColor = 'black';
+    		waitText[i].style.transform = 'scale(1.2)';
+    		waitText[i].style.borderRadius = '5px';
+    	}else{
+    		waitText[i].style.backgroundColor = 'red';
+    		waitText[i].style.transform = 'scale(0.5)';
+    		waitText[i].style.borderRadius = '0';
+    	}
+    };
+}
+search();
