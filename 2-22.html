@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>2-22</title>
+<style>
+    .wrap {width: 76%;margin: 20px auto;overflow: hidden;border: none;float: none;padding: 5px;}
+    div {border: 1px solid #848484;padding: 25px;margin: 10px;float: left;background: #fff;}
+	#form {text-align: center;padding: 30px;width: 70%;margin: 0 auto;}
+	legend {text-align: center;margin-top: 20px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+	<div id="root">
+		<div class="node1">
+			<div class="node2">
+				<div class="node3"></div>
+				<div class="node3"></div>
+			</div>
+			<div class="node2">
+				<div class="node3"></div>
+				<div class="node3"></div>
+			</div>
+		</div>
+		<div class="node1">
+			<div class="node2">
+				<div class="node3"></div>
+				<div class="node3"></div>
+			</div>
+			<div class="node2">
+				<div class="node3"></div>
+				<div class="node3"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<fieldset id="form">
+	<legend>请选择遍历方式和时间间隔</legend>
+	<button>前序遍历</button>
+	<button>中序遍历</button>
+	<button>后序遍历</button>
+	<label>遍历间隔时间<input type="number" id="text" value="1000">ms</label>
+</fieldset>
+<script src="js/2-22.js"></script>	
+</body>
+</html>
