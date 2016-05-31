@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>2-23</title>
+<style>
+    .wrap {width: 76%;margin: 20px auto;overflow: hidden;border: none;float: none;padding: 5px;display: block;}
+    div {border: 1px solid #848484;padding: 15px;margin: 10px;display:inline-block;background: #fff;}
+	#form {text-align: center;padding: 30px;width: 70%;margin: 0 auto;}
+	legend {text-align: center;margin-top: 20px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+	<div id="root">
+	    Supper
+	    <div>
+	        Cat
+			<div id="apple">
+				Apple
+				<div>Pear</div>
+				<div>Pig</div>
+				<div>Cola</div>
+				<div>Soccer</div>
+			</div>
+			<div>
+				Phone
+			</div>
+			<div>
+				<div>Book</div>
+				<div>School</div>
+			</div>
+		</div>
+		<div>
+			Note
+			<div>
+				Human
+				<div>Code</div>
+				<div>Operate</div>
+				<div>Man</div>
+			</div>
+			<div>
+				Program 
+				<div>
+					Bement
+					<div>
+						Cat
+					</div>
+				</div>
+				<div>
+					Class
+				</div>
+			</div>
+		</div>
+		<div>
+			Fish
+		</div>
+	</div>
+</div>
+
+<fieldset id="form">
+	<legend>请选择遍历方式和时间间隔</legend>
+	<button>深度遍历</button>
+	<button>广度遍历</button>
+	<input type="text" id="text1">
+	<button>深度搜索</button>
+	<input type="text" id="text2">
+	<button>广度搜索</button>
+	<label>遍历间隔时间<input type="number" id="text" value="1000">ms</label>
+</fieldset>
+<script src="js/2-23.js"></script>	
+</body>
+</html>
