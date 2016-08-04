@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>2-25</title>
+<link rel="stylesheet" href="css/2-25.css" />
+<style>
+	
+</style>
+</head>
+<body>
+<div class="tips">
+	<h4>完成度：</h4>
+	<ol>
+		<li>实现了节点的展开与收缩，这一段开始做的颇为费力，主要注意的是冒泡的阻止与放行</li>
+		<li>实现了添加节点。这里要注意的是添加了节点要重新为节点注册事件，以及根据接子节点判断其父节点的三角符号存在与否</li>
+		<li>还有一个是三角符号的状态，通过判断子节点的className是否是visible（子节点是否展现）来判断是该向右还是向下</li>
+		<li>实现了删除节点，这个有了前面的基础很简单，除了基本功能其他跟添加节点差不多，甚至还要简单，因为不用为新节点添加事件，删除了就没有了，阻止一下冒泡就行了。</li>
+		<li style="background-color:#FB8888;">搜索功能还未实现（不想弄了，这个需求已经整麻了，基础薄弱啊，意识薄弱啊，经验薄弱啊。），写一下基本思路（其实没什么，与前几个需求的遍历差不多），将要遍历的内容放进数组，取值遍历，要注意的是添加或删除节点的时候进行数组的更新，应该就OK了</li>
+	</ol>
+</div>
+<div class="wrap">
+	<div class="header"><h4>树形菜单组件</h4></div>
+	<div id="tree">
+		<div class="node-visible">
+		    <div class="node-header"><div class="arrow right-arrow"></div><span>食物</span><img src="img/add.png" class="add" alt="add" /></div>
+		</div>
+	</div>
+</div>
+<script src="js/2-25.js"></script>
+</body>
+</html>

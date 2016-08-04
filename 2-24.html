@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>2-24</title>
+<style>
+    .wrap {width: 76%;margin: 20px auto;overflow: hidden;border: none;float: none;padding: 5px;display: block;}
+    div {border: 1px solid #848484;padding: 10px 15px;margin: 10px;display:inline-block;background: #fff;}
+	#form {text-align: center;padding: 30px;width: 70%;margin: 0 auto;}
+	legend {text-align: center;margin-top: 20px;}
+</style>
+</head>
+<body>
+<h3>TIPS(what can you do):</h3>
+<ol>
+	<li>两个遍历按钮对应两种遍历方式</li>
+	<li>在其中一个搜索框中输入需要搜索的节点名并点击对应的搜索方式即可搜索</li>
+	<li>时间可以DIY</li>
+	<li>点击某个节点可以进行节点选中</li>
+	<li>选中节点后点击删除按钮可删除当前节点</li>
+	<li>选中节点后在添加输入框输入需要添加的节点名点击添加即可在选中的节点中添加</li>
+</ol>
+<div class="wrap">
+	<div id="root">
+	    Supper
+	    <div>
+	        Cat
+			<div id="apple">
+				Apple
+				<div>Pear</div>
+				<div>Pig</div>
+				<div>Cola</div>
+				<div>Soccer</div>
+			</div>
+			<div>
+				Phone
+			</div>
+			<div>
+				<div>Book</div>
+				<div>School</div>
+			</div>
+		</div>
+		<div>
+			Note
+			<div>
+				Human
+				<div>Code</div>
+				<div>Operate</div>
+				<div>Man</div>
+			</div>
+			<div>
+				Program 
+				<div>
+					Bement
+					<div>
+						Cat
+					</div>
+				</div>
+				<div>
+					Class
+				</div>
+			</div>
+		</div>
+		<div>
+			Fish
+		</div>
+	</div>
+</div>
+
+<fieldset id="form">
+	<legend>请选择遍历方式和时间间隔</legend>
+	<button>深度遍历</button>
+	<button>广度遍历</button>
+	<input type="text" id="text1">
+	<button>深度搜索</button>
+	<input type="text" id="text2">
+	<button>广度搜索</button>
+	<label>遍历间隔时间<input type="number" id="text" value="300">ms</label>
+	<hr/>
+	<button>删除</button>
+	<input type="text" />
+	<button>添加</button>
+</fieldset>
+<script src="js/2-24.js"></script>	
+</body>
+</html>
